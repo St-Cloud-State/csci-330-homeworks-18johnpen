@@ -1,0 +1,10 @@
+sbcl
+
+(caddr '(a b x d))
+
+
+(cadadr '(a (b (X d))))
+(car '(x d))
+
+(cadaar '(((a (b (x) d)))))
+(caad '(b (x) d))
