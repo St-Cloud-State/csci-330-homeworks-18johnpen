@@ -1,0 +1,98 @@
+Script started on 2025-02-03 02:32:50+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="161" LINES="16"]
+[0;32m@18johnpen [0m➜ [1;34m/workspaces/csci-330-homeworks-18johnpen [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (NOT (EQUAL(  3 (ABS -3)))
+
+NIL
+* (/ (_   + 8 12  ) 2 2)
+
+10
+* (+ (* 3 3)(*4  4 ) 4))
+
+25
+* (defun MILES-PER-GALLON) (INITIAL-ODOMETER READING        -READING   FINAL-ODOMETER RE   -READING GALLONS0 -USED( ) (       CONSUMED) (/ (= - FINAL-ODOMEE TER_=  -READING INITIAL O  -ODOMETER-READING) GALLONS-CU ONSUMED)                                                                                                                                                                    ^[[A    
+(exit)
+[0;32m@18johnpen [0m➜ [1;34m/workspaces/csci-330-homeworks-18johnpen [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (third '(the quick brown fox))
+
+BROWN
+* (list 2 'and 2 'is 4)
+
+(2 AND 2 IS 4)
+* (+1  1 (length (list 't'  't 't 't)))
+
+5
+* (cons 'patrick ( '(seymour marvin))
+
+(PATRICK SEYMOUR MARVIN)
+* (cons '  patrick ; (list 'seymour marvin      'marvin))
+
+(PATRICK SEYMOUR MARVIN)
+* (defun mystery (x) (list (second x  ) (frist x      irst x  )))
+
+MYSTERY
+* myster      (mystery 'danv     ; '(dancing bear; ( ))
+
+(BEAR DANCING)
+* (mystery 'dancing ; 'bear( )
+
+debugger invoked on a SB-INT:SIMPLE-PROGRAM-ERROR in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  invalid number of arguments: 2
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Exit debugger, returning to top level.
+
+(MYSTERY DANCING BEAR) [external]
+   source: (SB-INT:NAMED-LAMBDA MYSTERY
+               (X)
+             (BLOCK MYSTERY (LIST (SECOND X) (FIRST X))))
+0] m (mystery 'zow   zowie     (zowie))
+
+(NIL ZOWIE)
+0] myst    (mystery (list '  first 'second))
+
+(SECOND FIRST)
+0] (defun speak (x y) (list akk     'akl  ll x 'is y))
+
+SPEAK
+0] (list 'cons t nil)
+
+(CONS T NIL)
+0] (eval (list 'cons t nil))
+
+(T)
+0] (apply #'cons '(t nil))
+
+(T)
+0] (eval nil)
+
+NIL
+0] ^[[A    (liust     st 'eval nil)
+
+(EVAL NIL)
+0] (eval (list 'eval nil))
+
+NIL
+0] ^[[A    (exit)
+[0;32m@18johnpen [0m➜ [1;34m/workspaces/csci-330-homeworks-18johnpen [0;36m([1;31mmain[0;36m) [0m$ stop
+bash: stop: command not found
+[0;32m@18johnpen [1;31m➜ [1;34m/workspaces/csci-330-homeworks-18johnpen [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-02-03 02:45:02+00:00 [COMMAND_EXIT_CODE="127"]
