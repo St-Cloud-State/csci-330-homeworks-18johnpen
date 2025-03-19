@@ -1,0 +1,464 @@
+Script started on 2025-03-19 01:15:23+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="77" LINES="12"]
+[0;32m@18johnpen [0m➜ [1;34m/workspaces/csci-330-homeworks-18johnpen [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (laod "     oad "Hwork5/parse.lisp) ")
+
+; file: /workspaces/csci-330-homeworks-18johnpen/Hwork5/parse.lisp
+; in: DEFUN IFN
+;     (EFN (CDR STR))
+; 
+; caught STYLE-WARNING:
+;   undefined function: EFN
+
+;     (IPRIMEFN (SFN (EFN (CDR STR))))
+; 
+; caught STYLE-WARNING:
+;   undefined function: IPRIMEFN
+
+;     (SFN (EFN (CDR STR)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: SFN
+; 
+; compilation unit finished
+;   Undefined functions:
+;     EFN IPRIMEFN SFN
+;   caught 3 STYLE-WARNING conditions
+
+; file: /workspaces/csci-330-homeworks-18johnpen/Hwork5/parse.lisp
+; in: DEFUN IPRIMEFN
+;     (SFN (CDR STR))
+; 
+; caught STYLE-WARNING:
+;   undefined function: SFN
+; 
+; compilation unit finished
+;   Undefined function:
+;     SFN
+;   caught 1 STYLE-WARNING condition
+
+; file: /workspaces/csci-330-homeworks-18johnpen/Hwork5/parse.lisp
+; in: DEFUN EFN
+;     (EPRIMEFN REMAINING)
+; 
+; caught STYLE-WARNING:
+;   undefined function: EPRIMEFN
+
+;     (GFN STR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: GFN
+; 
+; compilation unit finished
+;   Undefined functions:
+;     EPRIMEFN GFN
+;   caught 2 STYLE-WARNING conditions
+
+; file: /workspaces/csci-330-homeworks-18johnpen/Hwork5/parse.lisp
+; in: DEFUN EPRIMEFN
+;     (GFN (CDR STR))
+; 
+; caught STYLE-WARNING:
+;   undefined function: GFN
+; 
+; compilation unit finished
+;   Undefined function:
+;     GFN
+;   caught 1 STYLE-WARNING condition
+
+; file: /workspaces/csci-330-homeworks-18johnpen/Hwork5/parse.lisp
+; in: DEFUN SFN
+;     (LFN (CDR STR))
+; 
+; caught STYLE-WARNING:
+;   undefined function: LFN
+; 
+; compilation unit finished
+;   Undefined function:
+;     LFN
+;   caught 1 STYLE-WARNING condition
+
+; file: /workspaces/csci-330-homeworks-18johnpen/Hwork5/parse.lisp
+; in: DEFUN LFN
+;     (LPRIMEFN (CDR STR))
+; 
+; caught STYLE-WARNING:
+;   undefined function: LPRIMEFN
+; 
+; compilation unit finished
+;   Undefined function:
+;     LPRIMEFN
+;   caught 1 STYLE-WARNING condition
+
+T
+* (Ifn'  '(i x o y s))
+
+(IN IFN) 
+(I X O Y S) 
+(IN EFN) 
+(X O Y S) 
+(IN GFN) 
+(X O Y S) 
+(IN EPRIMEFN) 
+(O Y S) 
+(IN GFN) 
+(Y S) 
+(IN EPRIMEFN) 
+(S) 
+(IN SFN) 
+(S) 
+(IN IPRIMEFN) 
+NIL 
+NIL
+* (Ifn ' (    (i x o y o w d s s b es    s' ))
+
+(IN IFN) 
+(I X O Y O W D S S B E S) 
+(IN EFN) 
+(X O Y O W D S S B E S) 
+(IN GFN) 
+(X O Y O W D S S B E S) 
+(IN EPRIMEFN) 
+(O Y O W D S S B E S) 
+(IN GFN) 
+(Y O W D S S B E S) 
+(IN EPRIMEFN) 
+(O W D S S B E S) 
+(IN GFN) 
+(W D S S B E S) 
+(IN EPRIMEFN) 
+(D S S B E S) 
+(IN SFN) 
+(D S S B E S) 
+(IN LFN) 
+(S S B E S) 
+(IN LPRIMEFN) 
+(S B E S) 
+(IN LFN) 
+(S B E S) 
+(IN LPRIMEFN) 
+(B E S) 
+(IN LFN) 
+(B E S) 
+(IN IPRIMEFN) 
+(E S) 
+(IN SFN) 
+(S) 
+NIL
+* (Ifn '( i  i z d s b))
+
+(IN IFN) 
+(I Z D S B) 
+(IN EFN) 
+(Z D S B) 
+(IN GFN) 
+(Z D S B) 
+(IN EPRIMEFN) 
+(D S B) 
+(IN SFN) 
+(D S B) 
+(IN LFN) 
+(S B) 
+(IN LPRIMEFN) 
+(B) 
+(IN LFN) 
+(B) 
+(IN IPRIMEFN) 
+NIL 
+NIL
+* (O Ifn '(i w d s s s b))
+
+(IN IFN) 
+(I W D S S S B) 
+(IN EFN) 
+(W D S S S B) 
+(IN GFN) 
+(W D S S S B) 
+(IN EPRIMEFN) 
+(D S S S B) 
+(IN SFN) 
+(D S S S B) 
+(IN LFN) 
+(S S S B) 
+(IN LPRIMEFN) 
+(S S B) 
+(IN LFN) 
+(S S B) 
+(IN LPRIMEFN) 
+(S B) 
+(IN LFN) 
+(S B) 
+(IN LPRIMEFN) 
+(B) 
+(IN LFN) 
+(B) 
+(IN IPRIMEFN) 
+NIL 
+NIL
+* (Ifn '  (i y o z s e s))
+
+(IN IFN) 
+(I Y O Z S E S) 
+(IN EFN) 
+(Y O Z S E S) 
+(IN GFN) 
+(Y O Z S E S) 
+(IN EPRIMEFN) 
+(O Z S E S) 
+(IN GFN) 
+(Z S E S) 
+(IN EPRIMEFN) 
+(S E S) 
+(IN SFN) 
+(S E S) 
+(IN IPRIMEFN) 
+(E S) 
+(IN SFN) 
+(S) 
+NIL
+* (Ifn ' (  (  i yo    o yo  o yo  o yo  o d s s b es  s))
+
+(IN IFN) 
+(I Y O Y O Y O Y O D S S B E S) 
+(IN EFN) 
+(Y O Y O Y O Y O D S S B E S) 
+(IN GFN) 
+(Y O Y O Y O Y O D S S B E S) 
+(IN EPRIMEFN) 
+(O Y O Y O Y O D S S B E S) 
+(IN GFN) 
+(Y O Y O Y O D S S B E S) 
+(IN EPRIMEFN) 
+(O Y O Y O D S S B E S) 
+(IN GFN) 
+(Y O Y O D S S B E S) 
+(IN EPRIMEFN) 
+(O Y O D S S B E S) 
+(IN GFN) 
+(Y O D S S B E S) 
+(IN EPRIMEFN) 
+(O D S S B E S) 
+(IN GFN) 
+(D S S B E S) 
+(IN EPRIMEFN) 
+(S S B E S ERR) 
+(IN SFN) 
+(S S B E S ERR) 
+(IN IPRIMEFN) 
+(S B E S ERR) 
+(B E S ERR ERR)
+* (Ifn '  (i   y o yo  o y o yo  o y d s s b es  s))
+
+(IN IFN) 
+(I Y O Y O Y O Y O Y D S S B E S) 
+(IN EFN) 
+(Y O Y O Y O Y O Y D S S B E S) 
+(IN GFN) 
+(Y O Y O Y O Y O Y D S S B E S) 
+(IN EPRIMEFN) 
+(O Y O Y O Y O Y D S S B E S) 
+(IN GFN) 
+(Y O Y O Y O Y D S S B E S) 
+(IN EPRIMEFN) 
+(O Y O Y O Y D S S B E S) 
+(IN GFN) 
+(Y O Y O Y D S S B E S) 
+(IN EPRIMEFN) 
+(O Y O Y D S S B E S) 
+(IN GFN) 
+(Y O Y D S S B E S) 
+(IN EPRIMEFN) 
+(O Y D S S B E S) 
+(IN GFN) 
+(Y D S S B E S) 
+(IN EPRIMEFN) 
+(D S S B E S) 
+(IN SFN) 
+(D S S B E S) 
+(IN LFN) 
+(S S B E S) 
+(IN LPRIMEFN) 
+(S B E S) 
+(IN LFN) 
+(S B E S) 
+(IN LPRIMEFN) 
+(B E S) 
+(IN LFN) 
+(B E S) 
+(IN IPRIMEFN) 
+(E S) 
+(IN SFN) 
+(S) 
+NIL
+* (i Ifn '  (i z s e s))
+
+(IN IFN) 
+(I Z S E S) 
+(IN EFN) 
+(Z S E S) 
+(IN GFN) 
+(Z S E S) 
+(IN EPRIMEFN) 
+(S E S) 
+(IN SFN) 
+(S E S) 
+(IN IPRIMEFN) 
+(E S) 
+(IN SFN) 
+(S) 
+NIL
+* (If  fn   fn '( i    i o x y s))
+
+(IN IFN) 
+(I O X Y S) 
+(IN EFN) 
+(O X Y S) 
+(IN GFN) 
+(O X Y S) 
+(IN EPRIMEFN) 
+(X Y S ERR) 
+(IN SFN) 
+(X Y S ERR) 
+(IN IPRIMEFN) 
+(X Y S ERR ERR) 
+(Y S ERR ERR ERR)
+* (' Ifn '( i    i x o y w o d s s b e s))
+
+(IN IFN) 
+(I X O Y W O D S S B E S) 
+(IN EFN) 
+(X O Y W O D S S B E S) 
+(IN GFN) 
+(X O Y W O D S S B E S) 
+(IN EPRIMEFN) 
+(O Y W O D S S B E S) 
+(IN GFN) 
+(Y W O D S S B E S) 
+(IN EPRIMEFN) 
+(W O D S S B E S) 
+(IN SFN) 
+(W O D S S B E S) 
+(IN IPRIMEFN) 
+(W O D S S B E S ERR) 
+(O D S S B E S ERR ERR)
+* (Ifn '  ( i  i z d b s))
+
+(IN IFN) 
+(I Z D B S) 
+(IN EFN) 
+(Z D B S) 
+(IN GFN) 
+(Z D B S) 
+(IN EPRIMEFN) 
+(D B S) 
+(IN SFN) 
+(D B S) 
+(IN LFN) 
+(B S) 
+(IN IPRIMEFN) 
+(S) 
+(ERR)
+* (ifn '      (I  fn '(i w d s s b s))
+
+(IN IFN) 
+(I W D S S B S) 
+(IN EFN) 
+(W D S S B S) 
+(IN GFN) 
+(W D S S B S) 
+(IN EPRIMEFN) 
+(D S S B S) 
+(IN SFN) 
+(D S S B S) 
+(IN LFN) 
+(S S B S) 
+(IN LPRIMEFN) 
+(S B S) 
+(IN LFN) 
+(S B S) 
+(IN LPRIMEFN) 
+(B S) 
+(IN LFN) 
+(B S) 
+(IN IPRIMEFN) 
+(S) 
+(ERR)
+* (Ifn '  (i y o s z e s))
+
+(IN IFN) 
+(I Y O S Z E S) 
+(IN EFN) 
+(Y O S Z E S) 
+(IN GFN) 
+(Y O S Z E S) 
+(IN EPRIMEFN) 
+(O S Z E S) 
+(IN GFN) 
+(S Z E S) 
+(IN EPRIMEFN) 
+(Z E S ERR) 
+(IN SFN) 
+(Z E S ERR) 
+(IN IPRIMEFN) 
+(Z E S ERR ERR) 
+(E S ERR ERR ERR)
+* (Ifn'    '(i y o y o yo  o y o y db  b s s e s))
+
+(IN IFN) 
+(I Y O Y O Y O Y O Y D B S S E S) 
+(IN EFN) 
+(Y O Y O Y O Y O Y D B S S E S) 
+(IN GFN) 
+(Y O Y O Y O Y O Y D B S S E S) 
+(IN EPRIMEFN) 
+(O Y O Y O Y O Y D B S S E S) 
+(IN GFN) 
+(Y O Y O Y O Y D B S S E S) 
+(IN EPRIMEFN) 
+(O Y O Y O Y D B S S E S) 
+(IN GFN) 
+(Y O Y O Y D B S S E S) 
+(IN EPRIMEFN) 
+(O Y O Y D B S S E S) 
+(IN GFN) 
+(Y O Y D B S S E S) 
+(IN EPRIMEFN) 
+(O Y D B S S E S) 
+(IN GFN) 
+(Y D B S S E S) 
+(IN EPRIMEFN) 
+(D B S S E S) 
+(IN SFN) 
+(D B S S E S) 
+(IN LFN) 
+(B S S E S) 
+(IN IPRIMEFN) 
+(S S E S) 
+(S E S ERR)
+* (Ifn '  (i z s s e))
+
+(IN IFN) 
+(I Z S S E) 
+(IN EFN) 
+(Z S S E) 
+(IN GFN) 
+(Z S S E) 
+(IN EPRIMEFN) 
+(S S E) 
+(IN SFN) 
+(S S E) 
+(IN IPRIMEFN) 
+(S E) 
+(E ERR)
+* (exit)
+[0;32m@18johnpen [0m➜ [1;34m/workspaces/csci-330-homeworks-18johnpen [0;36m([1;31mmain[0;36m) [0m$ (exit)
+[0;32m@18johnpen [0m➜ [1;34m/workspaces/csci-330-homeworks-18johnpen [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-03-19 01:19:49+00:00 [COMMAND_EXIT_CODE="0"]
