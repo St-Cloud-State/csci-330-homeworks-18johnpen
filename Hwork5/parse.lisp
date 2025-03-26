@@ -2,14 +2,14 @@
 
 ; I => iESI'
 (defun Ifn (str)
-(print ' (in Ifn)) (print str)
-(cond
-((eql (car str) 'i) (Iprimefn (Sfn (Efn (cdr str)))))
-(t (append (cdr str) (list 'err)))))
+(print '( in Ifn)) (print str)
+  (cond
+    ((eql (car str) 'i) (Iprimefn (Sfn (Efn (cdr str)))))
+    (t (append (cdr str) (list 'err)))))
 
 ; I' => eS|ε
 (defun Iprimefn(str)
-    (print '(in Iprimefn)) (print str)
+    (print '( in Iprimefn)) (print str)
   (cond
     ((null str) nil)
     ((eql (car str) 'e) (Sfn(cdr str)))
@@ -17,13 +17,13 @@
 
 ; E => GE'
 (defun Efn (str)
-  (print '(in Efn)) (print str)
+  (print '( in Efn)) (print str)
   (let ((remaining (Gfn str)))
     (when remaining (Eprimefn remaining))))
 
 ; E' => oGE'|ε 
 (defun Eprimefn (str)
-  (print '(in Eprimefn)) (print str)
+  (print '( in Eprimefn)) (print str)
   (cond
     ((eql (car str) 'o)
      (let ((remaining (Gfn (cdr str))))
@@ -43,7 +43,7 @@
 
 ; S => dLb|s
 (defun Sfn (str)
-  (print '(in Sfn)) (print str)
+  (print '( in Sfn)) (print str)
   (cond
     ((eql (car str) 's) (cdr str))
     ((eql (car str) 'd)
